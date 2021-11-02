@@ -14,12 +14,18 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
-            double line = Distance(1, 3, 4, 5);
-            Console.WriteLine("length of line is :"+line);
-            
-            
-        
-
+            double line1 = Distance(1, 3, 4, 5);
+            double line2 = Distance(1, 3, 4, 5);
+            if(line1 == line2)
+            {
+                Console.WriteLine("length is preferable");
+            }
+            else
+            {
+                Console.WriteLine("length is not preferable");
+            }
+            Console.WriteLine("length of line is :"+line1);
+            Console.WriteLine("length of second line:" + line2);
         }
     }
 }
