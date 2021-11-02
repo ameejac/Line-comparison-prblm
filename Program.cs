@@ -14,18 +14,29 @@ namespace ConsoleApp2
         }
         static void Main(string[] args)
         {
+	    //uc2 Equality method
             double line1 = Distance(1, 3, 4, 5);
             double line2 = Distance(1, 3, 4, 5);
-            if(line1 == line2)
+
+	    //uc3 Compareto Method
+            int compTo = line1.CompareTo(line2);
+            Console.WriteLine("compareto:" + compTo);
+            if(compTo > 0)
             {
-                Console.WriteLine("length is preferable");
+                Console.WriteLine("length is greater");
+            }
+            else if(compTo < 0)
+            {
+                Console.WriteLine("length is lesser");
             }
             else
             {
-                Console.WriteLine("length is not preferable");
+                Console.WriteLine("length is equal");
             }
             Console.WriteLine("length of line is :"+line1);
             Console.WriteLine("length of second line:" + line2);
+
+
         }
     }
 }
